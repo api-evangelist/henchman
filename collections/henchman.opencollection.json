@@ -1,0 +1,19 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Henchman API",
+    "version": "0.0",
+    "description": "Henchman is a legal knowledge and contract-drafting AI platform delivered as Microsoft 365 add-ins (Word, Outlook, Copilot) plus connectors into legal document management systems (iManage, NetDocuments, SharePoint, OneDrive, Google Drive, OpenText eDocs). As of this writing Henchman does NOT publish a public, documented developer API or API reference. Internal application endpoints exist under *.henchman.io (Dashboard, Auth, Add-in, API per its public bug bounty scope) but are not documented for third-party developers. No endpoints are fabricated in this collection. Henchman was acquired by LexisNexis in 2024 and is being integrated into Lexis+ AI and Lexis Create+."
+  },
+  "items": [
+    {
+      "info": {
+        "name": "No Public Developer API",
+        "type": "folder"
+      },
+      "docs": "Henchman has no public developer API or API reference. The documented surfaces are the supported DMS integrations (configured via service accounts and setup guides) and the Microsoft 365 add-ins. See https://help.henchman.io/home and https://henchman.io/integrations for the real integration documentation.",
+      "items": []
+    }
+  ],
+  "bundled": true
+}

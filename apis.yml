@@ -1,0 +1,107 @@
+aid: henchman
+url: https://raw.githubusercontent.com/api-evangelist/henchman/refs/heads/main/apis.yml
+name: Henchman
+kind: company
+description: Henchman is a legal knowledge and contract-drafting AI platform that surfaces
+  a firm's own past clauses and definitions from its document management system directly
+  inside Microsoft Word, Outlook, and Copilot. It connects to legal DMS platforms
+  (iManage, NetDocuments, SharePoint, OneDrive, Google Drive, OpenText eDocs),
+  extracts and ranks clauses and definitions, and adds a secure multi-LLM AI clause
+  assistant on top. Henchman was acquired by LexisNexis in 2024 and is being
+  integrated into Lexis+ AI and Lexis Create+. Henchman is delivered primarily as
+  add-ins and DMS connectors; it does not publish a public developer API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Legal
+- Legal Tech
+- Contract Drafting
+- Clause Search
+- Knowledge Management
+- AI
+created: '2026-06-21'
+modified: '2026-06-21'
+specificationVersion: '0.19'
+apis:
+- aid: henchman:clause-and-definition-search
+  name: Henchman Clause and Definition Search
+  tags:
+  - Clause Search
+  - Definition Search
+  - Legal
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://henchman.io/artificial-intelligence
+  properties:
+  - url: https://help.henchman.io/home
+    type: Documentation
+  - url: openapi/henchman-openapi.yml
+    type: OpenAPI
+  - url: collections/henchman.postman_collection.json
+    type: PostmanCollection
+  - url: collections/henchman.opencollection.json
+    type: OpenCollection
+  description: Searches a firm's extracted clauses and definitions across its connected
+    contract database, with intelligent ranking by frequency, document type, and
+    metadata, surfaced inside Microsoft Word and Outlook. This capability is exposed
+    through Henchman's add-ins and an internal application API; no public developer
+    API or API reference is published.
+- aid: henchman:knowledge-base
+  name: Henchman Knowledge Base
+  tags:
+  - Knowledge Management
+  - Contract Data
+  - Legal
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://henchman.io/integrations
+  properties:
+  - url: https://help.henchman.io/home
+    type: Documentation
+  - url: openapi/henchman-openapi.yml
+    type: OpenAPI
+  - url: collections/henchman.postman_collection.json
+    type: PostmanCollection
+  - url: collections/henchman.opencollection.json
+    type: OpenCollection
+  description: Builds and maintains a searchable knowledge layer over a firm's
+    precedent contracts by extracting clauses and definitions into a structured store
+    (the base package plus an optional Dynamic Knowledge add-on and AI Clause
+    Assistant add-on). Access is via the Henchman product, not a published developer
+    API.
+- aid: henchman:integrations
+  name: Henchman Integrations
+  tags:
+  - Integrations
+  - DMS
+  - iManage
+  - NetDocuments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://henchman.io/integrations
+  properties:
+  - url: https://help.henchman.io/home/imanage-cloud-integration
+    type: Documentation
+  - url: openapi/henchman-openapi.yml
+    type: OpenAPI
+  - url: collections/henchman.postman_collection.json
+    type: PostmanCollection
+  - url: collections/henchman.opencollection.json
+    type: OpenCollection
+  description: Connects Henchman to document management and storage systems - iManage
+    Cloud and On-Prem, NetDocuments, SharePoint, Microsoft OneDrive, Google Drive,
+    and OpenText eDocs - to extract precedent contracts, plus Microsoft Word, Outlook,
+    and Copilot surfaces. Integrations are configured via service accounts and
+    documented setup guides rather than a self-serve public API.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/henchman-io
+- type: Website
+  url: https://www.henchman.io
+- type: Documentation
+  url: https://help.henchman.io/home
+- type: Plans
+  url: plans/henchman-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/henchman-rate-limits.yml
+- type: FinOps
+  url: finops/henchman-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,96 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Henchman
+providerId: henchman
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Legal
+- Legal Tech
+- Contract Drafting
+- Clause Search
+- Knowledge Management
+- Plans
+description: >-
+  Henchman uses a sales-led, quote-on-request pricing model with no publicly
+  published rates. The product is packaged as a base offering (contract database
+  connection plus the enhanced clause and definition module and dedicated support)
+  with two optional add-ons: a Dynamic Knowledge add-on and an AI Clause Assistant
+  add-on. Pricing is obtained by scheduling a demo with sales. There is no public,
+  metered developer API and therefore no usage-based API pricing to reconcile.
+notes: >-
+  Pricing is not published; values below describe the packaging structure only and
+  are not reconciled figures. Following the LexisNexis acquisition (2024), Henchman
+  capabilities are also being delivered through Lexis+ AI and Lexis Create+, which
+  have their own LexisNexis commercial terms.
+sources:
+- https://henchman.io/pricing
+- https://directory.lawnext.com/products/henchman/
+plans:
+- id: henchman-base
+  name: Henchman Base Package
+  type: enterprise
+  description: >-
+    Core offering: connection to the firm's contract database (via supported DMS
+    integrations) plus the enhanced clause and definition search module and
+    dedicated support. Quoted per engagement; contact sales for a demo and price.
+  entries:
+  - label: Base Subscription
+    name: base_subscription
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: true
+  elements:
+  - name: Contract Database Connection
+  - name: Clause and Definition Search
+  - name: Microsoft Word and Outlook Add-ins
+  - name: Dedicated Support
+- id: henchman-dynamic-knowledge
+  name: Dynamic Knowledge Add-on
+  type: enterprise
+  description: >-
+    Optional add-on extending the knowledge layer over a firm's precedent contracts.
+    Quoted on top of the base package; contact sales.
+  entries:
+  - label: Dynamic Knowledge Add-on
+    name: dynamic_knowledge
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: true
+  elements:
+  - name: Dynamic Knowledge
+- id: henchman-ai-clause-assistant
+  name: AI Clause Assistant Add-on
+  type: enterprise
+  description: >-
+    Optional add-on providing the secure, multi-LLM AI clause assistant that
+    generates, translates, and updates clause text. Quoted on top of the base
+    package; contact sales.
+  entries:
+  - label: AI Clause Assistant Add-on
+    name: ai_clause_assistant
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: true
+  elements:
+  - name: AI Clause Assistant
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

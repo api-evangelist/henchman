@@ -1,0 +1,104 @@
+aid: henchman
+name: Henchman
+review:
+  question: Does Henchman expose a documented public developer API?
+  answer: false
+  date: '2026-06-21'
+  reviewer: API Evangelist
+  openapiSpecCreated: true
+  openapiScopeNote: |
+    An OpenAPI 3.0.1 document was created at openapi/henchman-openapi.yml with an
+    intentionally empty paths object and an honest description, because Henchman
+    publishes no public developer API and no API reference. No endpoints were
+    fabricated.
+findings:
+  summary: |
+    Henchman is a legal knowledge and contract-drafting AI product delivered as
+    Microsoft 365 add-ins (Word, Outlook, Copilot) plus connectors into legal
+    document management systems. It surfaces a firm's own past clauses and
+    definitions, extracted and ranked from its connected contract database, and
+    layers a secure multi-LLM AI clause assistant on top. It is NOT a developer
+    platform: there is no public, documented developer API, no API reference, and
+    no published request/response contracts. Henchman does operate internal
+    application API endpoints (under *.henchman.io, spanning Dashboard, Auth,
+    Add-in, and API surfaces, per its public bug bounty scope) that power the
+    add-ins and DMS connectors, but these are internal and undocumented for
+    third parties. The documented "integration surface" for customers is the set
+    of supported DMS connectors configured via service accounts and setup guides.
+  acquisition:
+    acquirer: LexisNexis
+    announced: '2024-06-03'
+    completed: '2024'
+    note: |
+      IMPORTANT CORRECTION: The provider was acquired by LexisNexis (a RELX
+      company), NOT by Litera. The deal was announced June 3, 2024 and completed
+      in 2024. Henchman capabilities are being integrated into LexisNexis products
+      including Lexis+ AI and Lexis Create+ (and surfaced under the Protégé /
+      Lexis Create DMS branding). The task brief stated "now part of Litera,"
+      which research does not support; the accurate acquirer is LexisNexis.
+  apiAvailability:
+    publicDeveloperApi: false
+    apiReferencePublished: false
+    webhooksDocumented: false
+    internalApiEndpointsExist: true
+    internalApiNote: |
+      Internal *.henchman.io endpoints (Dashboard, Auth, Add-in, API) are
+      referenced in Henchman's public Intigriti bug bounty program scope but are
+      not documented for external developer consumption.
+  productSurfaces:
+    addins:
+      - Microsoft Word add-in
+      - Microsoft Outlook add-in
+      - Microsoft Copilot integration
+    dmsIntegrations:
+      - iManage Cloud
+      - iManage On-Prem / iManage Work
+      - NetDocuments
+      - SharePoint (Cloud and On-Prem)
+      - Microsoft OneDrive
+      - Google Drive
+      - OpenText eDocs
+    capabilities:
+      - Clause and definition search with intelligent ranking
+      - Knowledge base over precedent contracts (Dynamic Knowledge add-on)
+      - AI Clause Assistant (secure multi-LLM)
+  pricing:
+    model: Sales-led / quote-on-request
+    reconciled: false
+    packaging:
+      - Base package (contract database connection, clause and definition module, support)
+      - Dynamic Knowledge add-on
+      - AI Clause Assistant add-on
+    note: No public rates; pricing requires a sales demo.
+sources:
+  - url: https://henchman.io/artificial-intelligence
+    type: Website
+    note: Describes the AI clause assistant and secure multi-LLM approach.
+  - url: https://henchman.io/integrations
+    type: Website
+    note: Lists DMS and storage integrations; no developer API mentioned.
+  - url: https://help.henchman.io/home/imanage-cloud-integration
+    type: Documentation
+    note: Integration setup via service accounts; no customer-facing API keys or webhooks documented.
+  - url: https://app.intigriti.com/programs/henchman/henchmanio
+    type: BugBounty
+    note: Bug bounty scope references internal Dashboard, Auth, Add-in, and API endpoints under *.henchman.io (not public developer docs).
+  - url: https://www.lexisnexis.com/community/pressroom/b/news/posts/lexisnexis-completes-acquisition-of-henchman
+    type: PressRelease
+    note: Confirms LexisNexis (not Litera) completed the acquisition in 2024.
+  - url: https://directory.lawnext.com/products/henchman/
+    type: Directory
+    note: Confirms sales-led pricing and base-plus-add-ons packaging.
+actions:
+  openapiPath: openapi/henchman-openapi.yml
+  apisYmlUpdated: true
+  reason: |
+    No public developer API surface exists, so the OpenAPI document uses an empty
+    paths object with an accurate description and the apis.yml documents the three
+    real product subjects (Clause and Definition Search, Knowledge Base,
+    Integrations) honestly, each noting that access is via the product/add-ins
+    rather than a published developer API. The acquisition is recorded as
+    LexisNexis, correcting the Litera reference in the task brief.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,44 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Henchman
+providerId: henchman
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Legal
+- Legal Tech
+- Clause Search
+- Rate Limiting
+- Quotas
+description: >-
+  Henchman does not publish a public developer API, and therefore publishes no
+  developer-facing rate limits, quotas, or throttling documentation. Any rate
+  limiting that applies to Henchman's internal application endpoints (Dashboard,
+  Auth, Add-in, API under *.henchman.io) and to its document management system
+  connectors is internal to the product and not documented externally. No values are
+  reconciled in this artifact because none are published.
+notes: >-
+  If Henchman or its successor surfaces within LexisNexis (Lexis+ AI, Lexis Create+)
+  ever publish a developer API with documented limits, reconcile this file against
+  that documentation at that time.
+sources:
+- https://help.henchman.io/home
+- https://henchman.io/integrations
+responseCodes:
+  throttled: not documented
+limits:
+- name: Developer API Rate Limits
+  scope: not applicable
+  metric: requests
+  limit: not published
+  notes: No public developer API exists, so no developer rate limits are documented.
+policies:
+- name: Internal Only
+  description: >-
+    Rate limiting, if any, applies to Henchman's internal add-in and DMS connector
+    traffic and is not exposed to or documented for third-party developers.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
