@@ -90,6 +90,8 @@ apis:
     and Copilot surfaces. Integrations are configured via service accounts and
     documented setup guides rather than a self-serve public API.
 common:
+- type: DomainSecurity
+  url: security/henchman-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/henchman-io
 - type: Website
