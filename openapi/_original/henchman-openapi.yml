@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: Henchman API
+  description: >-
+    Henchman is a legal knowledge and contract-drafting AI platform that surfaces a
+    firm's own past clauses and definitions from its document management system inside
+    Microsoft Word, Outlook, and Copilot. As of this writing Henchman does NOT publish
+    a public, documented developer API or API reference. Henchman operates internal
+    application API endpoints (under *.henchman.io, covering Dashboard, Auth, Add-in,
+    and API surfaces, as referenced in its public bug bounty scope) that power its
+    add-ins and document management system connectors, but these are not documented
+    for third-party developers and their request/response contracts are not public.
+    No endpoints are fabricated here. This paths object is intentionally empty to
+    reflect the real, honestly documented surface. The integration surface that is
+    documented for customers is the set of supported DMS connectors (iManage,
+    NetDocuments, SharePoint, OneDrive, Google Drive, OpenText eDocs) configured via
+    service accounts and setup guides, plus the Microsoft 365 add-ins - not a
+    self-serve REST API. Henchman was acquired by LexisNexis in 2024 and is being
+    integrated into Lexis+ AI and Lexis Create+.
+  termsOfService: https://henchman.io/terms-and-conditions
+  contact:
+    name: Henchman
+    url: https://www.henchman.io
+  version: '0.0'
+servers:
+  - url: https://www.henchman.io
+    description: >-
+      Marketing and product site. No public API base URL is documented. Internal
+      application endpoints exist under *.henchman.io but are not published for
+      external developer use.
+paths: {}
+components: {}

@@ -1,0 +1,14 @@
+{
+  "provider": "henchman",
+  "sources": [
+    "henchman-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived henchman-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
