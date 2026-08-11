@@ -45,7 +45,7 @@ apis:
   properties:
   - url: https://help.henchman.io/home
     type: Documentation
-  - url: openapi/henchman-openapi.yml
+  - url: openapi/_original/henchman-openapi.yml
     type: OpenAPI
   - url: collections/henchman.postman_collection.json
     type: PostmanCollection
@@ -67,7 +67,7 @@ apis:
   properties:
   - url: https://help.henchman.io/home
     type: Documentation
-  - url: openapi/henchman-openapi.yml
+  - url: openapi/_original/henchman-openapi.yml
     type: OpenAPI
   - url: collections/henchman.postman_collection.json
     type: PostmanCollection
@@ -90,7 +90,7 @@ apis:
   properties:
   - url: https://help.henchman.io/home/imanage-cloud-integration
     type: Documentation
-  - url: openapi/henchman-openapi.yml
+  - url: openapi/_original/henchman-openapi.yml
     type: OpenAPI
   - url: collections/henchman.postman_collection.json
     type: PostmanCollection
