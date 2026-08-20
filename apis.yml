@@ -28,6 +28,13 @@ tags:
 - Legal Tech
 - Contract Drafting
 - Clause Search
+- Knowledge-Management
+- Artificial Intelligence
+tags_raw:
+- Legal
+- Legal Tech
+- Contract Drafting
+- Clause Search
 - Knowledge Management
 - AI
 created: '2026-06-21'
@@ -59,6 +66,10 @@ apis:
 - aid: henchman:knowledge-base
   name: Henchman Knowledge Base
   tags:
+  - Knowledge-Management
+  - Contract Data
+  - Legal
+  tags_raw:
   - Knowledge Management
   - Contract Data
   - Legal
@@ -81,6 +92,11 @@ apis:
 - aid: henchman:integrations
   name: Henchman Integrations
   tags:
+  - Integration
+  - DMS
+  - iManage
+  - NetDocuments
+  tags_raw:
   - Integrations
   - DMS
   - iManage
