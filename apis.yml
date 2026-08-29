@@ -10,6 +10,17 @@ description: Henchman is a legal knowledge and contract-drafting AI platform tha
   assistant on top. Henchman was acquired by LexisNexis in 2024 and is being
   integrated into Lexis+ AI and Lexis Create+. Henchman is delivered primarily as
   add-ins and DMS connectors; it does not publish a public developer API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: unknown
