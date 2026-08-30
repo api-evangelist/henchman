@@ -129,6 +129,11 @@ apis:
     and Copilot surfaces. Integrations are configured via service accounts and
     documented setup guides rather than a self-serve public API.
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/lexisnexis/
+  name: LexisNexis
+  x-relationship: acquired
+  x-evidence: "Henchman was acquired by LexisNexis in 2024 and is being integrated into Lexis+ AI and Lexis Create+."
 - type: DomainSecurity
   url: security/henchman-domain-security.yml
 - type: LinkedIn
