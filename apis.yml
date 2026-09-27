@@ -39,7 +39,7 @@ tags:
 - Legal Tech
 - Contract Drafting
 - Clause Search
-- Knowledge-Management
+- Knowledge Management
 - Artificial Intelligence
 tags_raw:
 - Legal
@@ -48,6 +48,7 @@ tags_raw:
 - Clause Search
 - Knowledge Management
 - AI
+- Knowledge-Management
 created: '2026-06-21'
 modified: '2026-06-21'
 specificationVersion: '0.23'
@@ -77,13 +78,14 @@ apis:
 - aid: henchman:knowledge-base
   name: Henchman Knowledge Base
   tags:
-  - Knowledge-Management
+  - Knowledge Management
   - Contract Data
   - Legal
   tags_raw:
   - Knowledge Management
   - Contract Data
   - Legal
+  - Knowledge-Management
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://henchman.io/integrations
   properties:
