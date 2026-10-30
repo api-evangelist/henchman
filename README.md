@@ -1,4 +1,4 @@
-# Henchman (henchman)
+# Henchman
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,96 +66,108 @@
 
 Henchman is a legal knowledge and contract-drafting AI platform that surfaces a firm's own past clauses and definitions from its document management system directly inside Microsoft Word, Outlook, and Copilot. It connects to legal DMS platforms (iManage, NetDocuments, SharePoint, OneDrive, Google Drive, OpenText eDocs), extracts and ranks clauses and definitions, and adds a secure multi-LLM AI clause assistant on top. Henchman was acquired by LexisNexis in 2024 and is being integrated into Lexis+ AI and Lexis Create+. Henchman is delivered primarily as add-ins and DMS connectors; it does not publish a public developer API.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/henchman/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/henchman/refs/heads/main/apis.yml)
+**Areas:** Legal · Legal Tech · Contract Drafting · Clause Search · Knowledge Management · Artificial Intelligence
 
-## API Availability
+## Henchman on APIs.io
 
-Henchman is an add-in and integration product, not a developer platform. It has internal application API endpoints (under `*.henchman.io`, covering Dashboard, Auth, Add-in, and API surfaces, as referenced in its public bug bounty scope) that power the Word/Outlook add-ins and DMS connectors, but **no public, documented developer API or API reference is published** as of this writing. The "developer surface" is the set of supported document management system integrations and the Microsoft 365 add-ins. The OpenAPI document in this repository therefore carries an empty `paths` object with an honest description rather than fabricated endpoints.
+Everything profiled for Henchman is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/henchman/](https://apis.io/providers/henchman/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Legal
-- Legal Tech
-- Contract Drafting
-- Clause Search
-- Knowledge Management
-- AI
+- [Henchman Clause and Definition Search](https://apis.io/apis/henchman/clause-and-definition-search/) — Searches a firm's extracted clauses and definitions across its connected contract database, with intelligent ranking by frequency, document type, and…
+- [Henchman Knowledge Base](https://apis.io/apis/henchman/knowledge-base/) — Builds and maintains a searchable knowledge layer over a firm's precedent contracts by extracting clauses and definitions into a structured store (the base…
+- [Henchman Integrations](https://apis.io/apis/henchman/integrations/) — Connects Henchman to document management and storage systems - iManage Cloud and On-Prem, NetDocuments, SharePoint, Microsoft OneDrive, Google Drive, and…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-06-21
-- **Modified:** 2026-06-21
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Collections (1)
 
-### Henchman Clause and Definition Search
+Postman and Open Collection request collections.
 
-Searches a firm's extracted clauses and definitions across its connected contract database, with intelligent ranking by frequency, document type, and metadata, surfaced inside Microsoft Word and Outlook. This capability is exposed through Henchman's add-ins and an internal application API; no public developer API or API reference is published.
+- [Henchman API](https://apis.io/collections/henchman/open-henchman/)
 
-- **Human URL:** [https://henchman.io/artificial-intelligence](https://henchman.io/artificial-intelligence)
+#### Security (1)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Clause Search
-- Definition Search
-- Legal
+- [Henchman Domain Security](https://apis.io/security/henchman/henchman-domain-security/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://help.henchman.io/home)
-- [OpenAPI](openapi/henchman-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/henchman.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/henchman.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published plans, tiers and prices.
 
-### Henchman Knowledge Base
+- [Henchman Plans Pricing](https://apis.io/plans/henchman/henchman-plans-pricing/)
 
-Builds and maintains a searchable knowledge layer over a firm's precedent contracts by extracting clauses and definitions into a structured store (the base package plus an optional Dynamic Knowledge add-on and AI Clause Assistant add-on). Access is via the Henchman product, not a published developer API.
+#### Rate limits (1)
 
-- **Human URL:** [https://henchman.io/integrations](https://henchman.io/integrations)
+Published request limits.
 
-#### Tags
+- [Henchman Rate Limits](https://apis.io/rate-limits/henchman/henchman-rate-limits/)
 
-- Knowledge Management
-- Contract Data
-- Legal
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://help.henchman.io/home)
-- [OpenAPI](openapi/henchman-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/henchman.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/henchman.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Henchman Finops](https://apis.io/finops/henchman/henchman-finops/)
 
-### Henchman Integrations
+## Where to find this API
 
-Connects Henchman to document management and storage systems - iManage Cloud and On-Prem, NetDocuments, SharePoint, Microsoft OneDrive, Google Drive, and OpenText eDocs - to extract precedent contracts, plus Microsoft Word, Outlook, and Copilot surfaces. Integrations are configured via service accounts and documented setup guides rather than a self-serve public API.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- **Human URL:** [https://henchman.io/integrations](https://henchman.io/integrations)
-
-#### Tags
-
-- Integrations
-- DMS
-- iManage
-- NetDocuments
-
-#### Properties
-
-- [Documentation](https://help.henchman.io/home/imanage-cloud-integration)
-- [OpenAPI](openapi/henchman-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/henchman.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/henchman.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/henchman-io)
 - [Website](https://www.henchman.io)
 - [Documentation](https://help.henchman.io/home)
-- [Plans](plans/henchman-plans-pricing.yml)
-- [Rate Limits](rate-limits/henchman-rate-limits.yml)
-- [Fin Ops](finops/henchman-finops.yml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 15.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 25.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 13.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/henchman/](https://apis.io/providers/henchman/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Henchman: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/henchman/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
